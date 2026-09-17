@@ -1,5 +1,6 @@
 package com.back.shared.member.domain;
 
+import lombok.Setter;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 
 @MappedSuperclass
 @Getter
+@Setter
 @NoArgsConstructor
 public abstract class ReplicaMember extends BaseMember {
     @Id
